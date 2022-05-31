@@ -1,0 +1,194 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*!------Обнуляющие стили--------*/
+/*?------Обнуляющие стили--------*/
+/*TODO---Обнулябщие стили--------*/
+body {
+  background: #e6df44;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+  font-size: 25px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  margin-right: 0;
+}
+
+.container {
+  background-color: #f0810f;
+  padding: 20px;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.result-container {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  color: #063852;
+}
+
+.nuumber {
+  border-radius: 3px;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: #063852;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .floating-btn {
+    right: 10px;
+  }
+}

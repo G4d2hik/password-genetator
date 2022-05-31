@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Генератор пароля</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Длина пароля</label>
+                <input type="number" id="length" min='4' max='20' value='10' class="nuumber" />
+            </div>
+            <div class="setting">
+                <label>Подключить заглавные буквы</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Подключить строчные буквы</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Подключить цифры</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Подключить символы</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Сгенерировать пароль
+        </button>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
